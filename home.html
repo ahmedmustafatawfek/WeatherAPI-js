@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINK CSS , BOOTSTRAP AND FONTAWSOME  -->
+
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/86e8bfc776.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>weather</title>
+  </head>
+  <body>
+    <!-- START NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg bg-body-black">
+      <div class="container">
+        <img src="images/logo.png" alt="logo" class="ps-2 pe-3" />
+        <div class="d-flex">
+          <a class="navbar-brand" href="#">
+            Weather
+            <p class="subtitle">tagline goes here</p>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link mx-2 active"
+                aria-current="page"
+                href="/home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--- END OF NAVBAR SECTION-->
+
+    <!-- HEADER SECTION -->
+    <div class="header">
+      <div class="container">
+        <div class="search py-2 position-relative" id="searchInput">
+          <input
+            type="text"
+            class="w-100 my-5 px-5 rounded-5"
+            placeholder="Find your location...."
+          />
+          <input
+            type="submit"
+            id="findBtn"
+            class="btn position-absolute"
+            value="Find"
+          />
+        </div>
+      </div>
+
+      <div class="weather-days py-3 mb-2">
+        <div class="container">
+          <div class="table-of-days d-flex" id="tableDays">
+            <!-- current day -->
+            <div class="box current-day">
+              <div class="title d-flex justify-content-between px-3 py-2">
+                <p id="todayName"></p>
+                <span>
+                  <span id="todayDateNum"></span>
+                  <span id="todayDateMonth"></span>
+                </span>
+              </div>
+              <div class="content p-3">
+                <p id="todayLocation" class="fs-5"></p>
+                <div class="deg d-flex justify-content-between">
+                  <div class="number">
+                    <span id="todayTemp"></span><sup>o</sup> C
+                  </div>
+
+                  <div class="icon">
+                    <img src="" class="pt-4 pe-2" id="today-condition-img" />
+                  </div>
+                </div>
+                <p id="today-condition-text" class="condition"></p>
+                <span class="px-2">
+                  <img class="pe-1" src="" />
+                  <span id="humidity"></span>
+                </span>
+                <span class="px-2">
+                  <img class="pe-1" src="" />
+                  <span id="wind"></span>
+                </span>
+                <span class="px-2">
+                  <img class="pe-1" src="" />
+                  <span id="wind-direction"></span>
+                </span>
+              </div>
+            </div>
+
+            <!-- 2th day -->
+            <div class="box">
+              <div class="title d-flex justify-content-center px-4 py-2">
+                <p class="next-day-name"></p>
+              </div>
+              <div class="content p-4 text-center">
+                <div class="icon">
+                  <img class="next-condition-img" src="" />
+                </div>
+                <div class="deg">
+                  <div class="max-temp pt-2">
+                    <span class="next-max-temp"></span>
+                    <span><sup>o</sup> c</span>
+                  </div>
+                  <div class="min-temp pt-2">
+                    <span class="next-min-temp"></span>
+                    <span><sup>o</sup> c</span>
+                  </div>
+                </div>
+                <p class="next-condition-text py-2"></p>
+              </div>
+            </div>
+
+            <!-- 3th day -->
+            <div class="box">
+              <div class="title d-flex justify-content-center px-4 py-2">
+                <p class="next-day-name"></p>
+              </div>
+              <div class="content p-4 text-center">
+                <div class="icon">
+                  <img class="next-condition-img" src="" />
+                </div>
+                <div class="deg">
+                  <div class="max-temp pt-2">
+                    <span class="next-max-temp"></span>
+                    <span><sup>o</sup> c</span>
+                  </div>
+                  <div class="min-temp pt-2">
+                    <span class="next-min-temp"></span>
+                    <span><sup>o</sup> c</span>
+                  </div>
+                </div>
+                <p class="next-condition-text py-2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HEADER SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <footer class="py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="subscribe position-relative">
+              <input
+                type="text"
+                class="my-5 px-4 rounded-5"
+                placeholder="Enter your email to subscribe...."
+              />
+              <input
+                type="button"
+                class="btn position-absolute"
+                value="subscribe"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="social-icons py-2 my-5">
+              <a class="px-2" href=""
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a class="px-2" href=""><i class="fa-brands fa-twitter"></i></a>
+              <a class="px-2" href=""
+                ><i class="fa-brands fa-google-plus-g goog"></i
+              ></a>
+              <a class="px-2" href=""
+                ><i class="fa-brands fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+          <p>
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF FOOTER SECTION -->
+
+    <script src="/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

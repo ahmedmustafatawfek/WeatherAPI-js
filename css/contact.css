@@ -1,0 +1,225 @@
+body {
+  background-color: #1e202b;
+}
+
+nav.nav {
+  background-color: #1e202b;
+}
+
+a.navbar-brand {
+  font-size: 1rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a.navbar-brand:hover {
+  color: whitesmoke;
+}
+
+p.subtitle {
+  font-size: 0.7rem;
+}
+
+ul.navbar-nav .nav-item a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-inline: 1.5rem;
+  padding-block: 0.2rem;
+  border-radius: 3rem;
+  border: solid 0.13rem transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.navbar-nav .nav-item a:hover,
+ul.navbar-nav .nav-item a.active {
+  border: solid 0.13rem #009ad8;
+  color: #009ad8;
+}
+
+/* Contact us  */
+.contact-us .input {
+  background-color: #262936;
+  border-radius: 3rem;
+}
+
+.contact-us .input a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.contact-us .input a,
+.contact-us .input p {
+  font-size: 0.8rem;
+}
+
+.contact-us .input i {
+  color: #696c79;
+}
+
+.contact-us .input a:hover {
+  text-decoration: underline;
+}
+
+.contact-us .map {
+  background-color: #262936;
+  height: 20rem;
+  border-radius: 1.5rem;
+  width: 83%;
+  margin-block-start: 2rem;
+  margin-block-end: 5rem;
+}
+.contact-us .map p{
+  margin: 0;
+}
+
+.contact-us .map i {
+  color: #009ad8;
+}
+
+.contact-us .map .item-one {
+  margin-block-start: 11rem;
+}
+
+.contact-us .details p {
+  font-size: 0.9rem;
+}
+
+.contact-us .details input {
+  border-radius: 3rem;
+  color: whitesmoke;
+  background-color: #262936;
+  border: 0.1rem solid transparent;
+}
+
+.contact-us .details textarea {
+  border-radius: 1.5rem;
+  resize: none;
+  overflow: auto;
+  background-color: #262936;
+  border: 0.1rem solid transparent;
+}
+
+.contact-us .details input:hover,
+.contact-us .details textarea:hover,
+.contact-us .details input:focus-visible,
+.contact-us .details textarea:focus-visible {
+  border: 0.1rem solid #009ad8;
+  outline: #009ad8;
+}
+
+.contact-us .details button.btn {
+  background-color: #009ad8;
+  color: whitesmoke;
+  width: 20%;
+  border-radius: 3rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #262936;
+}
+
+footer .container .subscribe input {
+  padding-block: 0.9rem;
+  background-color: #1e202b;
+  border: none;
+}
+
+footer .container .subscribe input[type="text"] {
+  width: 80%;
+}
+
+footer .container .subscribe input:focus {
+  outline: unset;
+  color: whitesmoke;
+  box-shadow: 0.1rem 0.1rem 1rem #009ad8;
+}
+
+footer .container .subscribe input.btn {
+  background-color: #009ad8;
+  color: whitesmoke;
+  padding-inline: 2rem;
+  padding-block: 0.6rem;
+  border-radius: 3rem;
+  right: 20.5%;
+  top: 36%;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .container .subscribe input.btn:hover {
+  transform: scale(0.8);
+  background-color: #009ad8;
+  color: whitesmoke;
+}
+
+footer .container .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .social-icons a {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #1e202b;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-inline: 0.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .container .social-icons a i {
+  color: #009ad8;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .container .social-icons a i:not(.goog) {
+  padding: 1rem 0.7rem;
+}
+
+footer .container .social-icons a i.goog {
+  padding: 1rem 0.3rem;
+}
+
+footer .container .social-icons a:hover {
+  background-color: #009ad8;
+}
+footer .container .social-icons a:hover i {
+  color: whitesmoke;
+}
+
+footer .container p {
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 991px) {
+
+  button.navbar-toggler{
+    background-color:whitesmoke;
+    font-size: .6rem;
+  }
+
+  button.navbar-toggler:focus,
+  button.navbar-toggler:focus-visible {
+    outline: #009ad8;
+    border: #009ad8 .1rem solid;
+    box-shadow: unset;
+  }
+
+  .navbar>.container{
+    justify-content:flex-start;
+  }
+
+  .contact-us .map {
+    width: 100%;
+    margin-block-end: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-us .map .item p,
+  .contact-us .map .item-one p{
+    font-size: .8rem;
+  }
+}

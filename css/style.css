@@ -1,0 +1,252 @@
+body {
+  background-color: #262936;
+}
+
+nav.nav {
+  background-color: #1e202b;
+}
+
+a.navbar-brand {
+  font-size: 1rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a.navbar-brand:hover {
+  color: whitesmoke;
+}
+
+p.subtitle {
+  font-size: 0.7rem;
+}
+
+ul.navbar-nav .nav-item a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-inline: 1.5rem;
+  padding-block: 0.2rem;
+  border-radius: 3rem;
+  border: solid 0.13rem transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.navbar-nav .nav-item a:hover,
+ul.navbar-nav .nav-item a.active {
+  border: solid 0.13rem #009ad8;
+  color: #009ad8;
+}
+
+/* HEADER  */
+.header {
+  background: url(../images/banner.png) no-repeat;
+  width: 100%;
+  padding-block-start: 2rem;
+  padding-block-end: 5rem;
+}
+
+.container {
+  color: whitesmoke;
+}
+
+.container .search input {
+  padding-block: 0.9rem;
+  background-color: #1e202b;
+  border: none;
+}
+
+.container .search input:focus {
+  outline: unset;
+  color: whitesmoke;
+  box-shadow: 0.1rem 0.1rem 1rem #009ad8;
+}
+
+.container .search input.btn {
+  background-color: #009ad8;
+  color: whitesmoke;
+  padding-inline: 2rem;
+  padding-block: 0.6rem;
+  border-radius: 3rem;
+  right: 0.5%;
+  top: 37%;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .search input.btn:hover {
+  transform: scale(0.8);
+  background-color: #009ad8;
+  color: whitesmoke;
+}
+
+.weather-days  .container .table-of-days .box{
+  width: 33%;
+  margin-inline: .5rem;
+}
+
+.container .title {
+  background-color: #2d303d;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.container .content {
+  background-color: #323544;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.container .content .number {
+  font-size: 4rem;
+  padding-block: .8rem;
+  font-weight: 700;
+}
+
+.container .content .deg .icon img {
+  width: 100%;
+}
+
+.container .content p.next-condition-text {
+  color: #009ad8;
+}
+
+.container .content .deg .max-temp {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.container .content .deg .min-temp {
+  font-size: 1.3rem;
+  color: #918989;
+}
+
+/* FOOTER */
+footer {
+  background-color: #323544;
+}
+
+footer .container .subscribe input {
+  padding-block: 0.9rem;
+  background-color: #1e202b;
+  border: none;
+}
+
+footer .container .subscribe input[type="text"] {
+  width: 80%;
+}
+
+footer .container .subscribe input:focus {
+  outline: unset;
+  color: whitesmoke;
+  box-shadow: 0.1rem 0.1rem 1rem #009ad8;
+}
+
+footer .container .subscribe input.btn {
+  background-color: #009ad8;
+  color: whitesmoke;
+  padding-inline: 2rem;
+  padding-block: 0.6rem;
+  border-radius: 3rem;
+  right: 20.5%;
+  top: 36%;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .container .subscribe input.btn:hover {
+  transform: scale(0.8);
+  background-color: #009ad8;
+  color: whitesmoke;
+}
+
+footer .container .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .social-icons a {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #1e202b;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-inline: 0.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .container .social-icons a i {
+  color: #009ad8;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .container .social-icons a i:not(.goog) {
+  padding: 1rem 0.7rem;
+}
+
+footer .container .social-icons a i.goog {
+  padding: 1rem 0.3rem;
+}
+
+footer .container .social-icons a:hover {
+  background-color: #009ad8;
+}
+footer .container .social-icons a:hover i {
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    height: 100vh;
+    margin-block-end: 50rem;
+  }
+  button.navbar-toggler {
+    background-color: whitesmoke;
+    font-size: 0.5rem;
+    margin-inline-start: auto;
+  }
+
+  button.navbar-toggler:focus,
+  button.navbar-toggler:focus-visible {
+    outline: #009ad8;
+    border: #009ad8 0.1rem solid;
+    box-shadow: unset;
+  }
+
+  .navbar > .container {
+    justify-content: flex-start;
+  }
+
+  .contact-us .map {
+    width: 100%;
+    margin-block-end: 3rem;
+  }
+  footer .container .subscribe input[type="text"] {
+    width: 100%;
+  }
+
+  footer .container .subscribe input.btn {
+    padding-inline: 1.5rem;
+    padding-block: 0.6rem;
+    border-radius: 3rem;
+    right: 1.5%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-us .map .item p,
+  .contact-us .map .item-one p {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    height: 100vh;
+    margin-block-end: 8rem;
+  }
+
+  .container .content .number {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .container .content p.condition {
+    padding-block-end: 0rem;
+  }
+}
